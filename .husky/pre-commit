@@ -1,8 +1,6 @@
 #!/usr/bin/env sh
 . "$(dirname "$0")/_/husky.sh"
 
-echo "Running lint:fix before commit..."
-npm run lint:fix
-
-# Add any fixed changes to the commit
-git add -A
+echo "Running lint-staged on staged files..."
+# Use npx so it works without adding extra npm script; lint-staged will run eslint --fix on staged files
+npx --no-install lint-staged

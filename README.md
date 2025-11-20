@@ -24,6 +24,17 @@ To use this program, ensure that Python (version 3 or higher) is installed on yo
     python wmaker.py
     ```
 
+If you use the repository's JavaScript tooling (linting, formatting), Node.js and npm are also required.
+
+Node/npm quick start:
+
+```powershell
+Set-Location 'C:\Users\thekilldro\warpwallet_cracker\wmaker'
+npm install
+npm run lint       # Check JS/TS files with ESLint
+npm run lint:fix   # Auto-fix fixable lint issues
+```
+
 ## Usage
 
 When you run the program, follow these steps:
